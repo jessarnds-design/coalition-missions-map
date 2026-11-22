@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Like-minded churches. One region. Reaching the world. — CoalitionCEC</title>
+  <meta name="description" content="Like-minded churches in Northern California are impacting the world. Missionaries and ministries published by CoalitionCEC churches, shown at country or region level."/>
+  <link rel="icon" type="image/png" href="assets/favicon.png?v=2"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+  <style>
+    :root {
+      --green: #173027;
+      --green-2: #1f3d32;
+      --green-3: #23483b;
+      --gold: #E7B65E;
+      --gold-2: #d4a34e;
+      --cream: #F6EFE0;
+      --cream-2: #efe6d2;
+      --ink: #173027;
+      --muted: #5c6f66;
+    }
+    * { box-sizing: border-box; }
+    html, body {
+      height: 100%;
+      margin: 0;
+      background: var(--green);
+      color: var(--cream);
+      font-family: "Source Sans 3", "Source Sans Pro", system-ui, sans-serif;
+    }
+    .app {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      flex: 0 0 auto;
+      background: var(--green);
+      color: var(--cream);
+      padding: 10px 16px 8px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      border-bottom: 3px solid var(--gold);
+      z-index: 1000;
+    }
+    header img.seal {
+      width: 68px;
+      height: 68px;
+      flex: 0 0 auto;
+    }
+    header .titles { min-width: 0; flex: 1 1 auto; }
+    header h1 {
+      font-family: Cinzel, "Times New Roman", serif;
+      font-weight: 650;
+      font-size: 1.05rem;
+      letter-spacing: .04em;
+      margin: 0 0 2px;
+      color: var(--cream);
+      line-height: 1.25;
+    }
+    header p.sub {
+      margin: 0;
+      font-size: 12.5px;
+      color: #d9c9a6;
+      line-height: 1.35;
+    }
+    .stats {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 18px;
+      flex: 0 0 auto;
+      justify-content: flex-end;
+    }
+    .stat { text-align: center; min-width: 72px; }
+    .stat b {
+      display: block;
+      font-family: Cinzel, serif;
+      font-size: 1.25rem;
+      color: var(--gold);
+      line-height: 1.1;
+      font-weight: 650;
+    }
+    .stat span {
+      display: block;
+      font-size: 10.5px;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+      color: #cfc3a8;
+    }
+    #map {
+      flex: 1 1 auto;
+      background: #cfd6c8;
+      min-height: 280px;
+    }
+    /* Mute tiles slightly so brand markers stand out; markers live in other panes. */
+    .leaflet-tile-pane { filter: saturate(.82) contrast(.96) sepia(.12); }
+    .leaflet-container { font-family: "Source Sans 3", system-ui, sans-serif; background: #cfd6c8; }
+
+    .view-btns {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      z-index: 500;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .view-btns button {
+      background: var(--green);
+      color: var(--cream);
+      border: 1px solid var(--gold);
+      border-radius: 6px;
+      padding: 6px 12px;
+      font: 600 12px/1.2 "Source Sans 3", sans-serif;
+      letter-spacing: .03em;
+      cursor: pointer;
+      box-shadow: 0 1px 4px rgba(0,0,0,.25);
+    }
+    .view-btns button:hover { background: var(--green-3); }
+
+    .legend {
+      position: absolute;
+      left: 12px;
+      bottom: 24px;
+      z-index: 500;
+      background: var(--cream);
+      color: var(--ink);
+      padding: 12px 14px 10px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(23,48,39,.28);
+      font-size: 13px;
+      line-height: 1.4;
+      max-width: min(320px, calc(100vw - 28px));
+      border-top: 3px solid var(--gold);
+    }
+    .legend h2 {
+      font-family: Cinzel, serif;
+      font-size: 13px;
+      letter-spacing: .05em;
+      margin: 0 0 8px;
+      font-weight: 650;
+    }
+    .legend .row { display: flex; align-items: center; gap: 8px; margin: 4px 0; }
+    .legend .swatch { flex: 0 0 auto; }
+    .legend .note {
+      margin: 8px 0 0;
+      font-size: 11px;
+      color: var(--muted);
+    }
+    .legend-toggle {
+      display: none;
+      position: absolute;
+      left: 12px;
+      bottom: 24px;
+      z-index: 501;
+      background: var(--green);
+      color: var(--cream);
+      border: 1px solid var(--gold);
+      border-radius: 6px;
+      padding: 6px 10px;
+      font: 600 12px "Source Sans 3", sans-serif;
+      cursor: pointer;
+    }
+    .church-icon, .field-icon {
+      background: transparent;
+      border: none;
+    }
+    .church-icon img {
+      width: 34px;
+      height: 34px;
+      display: block;
+      filter: drop-shadow(0 1px 2px rgba(0,0,0,.45));
+    }
+    .field-marker {
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background: var(--gold);
+      border: 2px solid #173027;
+      box-shadow: 0 0 0 2px rgba(231,182,94,.35), 0 1px 3px rgba(0,0,0,.35);
+    }
+    .field-marker.lg { width: 22px; height: 22px; }
+    .field-marker.xl { width: 26px; height: 26px; }
+    .popup-card { min-width: 200px; max-width: 320px; }
+    .popup-card h3 {
+      font-family: Cinzel, serif;
+      font-size: 15px;
+      margin: 0 0 4px;
+      color: var(--green);
+      letter-spacing: .03em;
+    }
+    .popup-card .meta {
+      font-size: 12px;
+      color: var(--muted);
+      margin: 0 0 8px;
+    }
+    .popup-card ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      max-height: 240px;
+      overflow: auto;
+    }
+    .popup-card li {
+      padding: 6px 0;
+      border-top: 1px solid #e6dcc6;
+      font-size: 13px;
+      line-height: 1.35;
+      color: #1c2e27;
+    }
+    .popup-card li:first-child { border-top: 0; }
+    .popup-card .who { font-weight: 650; }
+    .popup-card .org, .popup-card .field-line, .popup-card .li-note {
+      display: block;
+      font-size: 12px;
+      color: var(--muted);
+    }
+    .popup-card .prayer {
+      display: inline-block;
+      margin-left: 6px;
+      font-size: 10px;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+      color: #8a6a2a;
+      border: 1px solid #e7b65e;
+      padding: 0 5px;
+      border-radius: 3px;
+    }
+    .leaflet-popup-content-wrapper {
+      background: var(--cream);
+      border-radius: 8px;
+      box-shadow: 0 4px 16px rgba(23,48,39,.25);
+    }
+    .leaflet-popup-content { margin: 12px 14px; }
+    .leaflet-popup-tip { background: var(--cream); }
+    .leaflet-control-attribution {
+      font-size: 10px !important;
+      background: rgba(246,239,224,.88) !important;
+      color: #445 !important;
+    }
+
+    @media (max-width: 720px) {
+      header { flex-wrap: wrap; padding: 8px 10px 8px; gap: 8px 10px; }
+      header img.seal { width: 56px; height: 56px; }
+      header h1 { font-size: 1rem; }
+      .stats { width: 100%; justify-content: space-between; gap: 6px 8px; }
+      .stat { min-width: 64px; }
+      .stat b { font-size: 1.05rem; }
+      .view-btns { top: 8px; right: 8px; }
+      .view-btns button { padding: 5px 8px; font-size: 11px; }
+      .legend { display: none; }
+      .legend.open { display: block; bottom: 64px; }
+      .legend-toggle { display: block; }
+    }
+    @media (max-height: 560px) {
+      header img.seal { width: 52px; height: 52px; }
+      header { padding: 6px 10px; }
+      header h1 { font-size: .95rem; }
+      header p.sub { display: none; }
+      .stat b { font-size: 1rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <header>
+      <img class="seal" src="assets/seal-256.png?v=2" width="68" height="68" alt="The Coalition of Christ-Exalting Churches seal"/>
+      <div class="titles">
+        <h1>Like-minded churches. One region. Reaching the world.</h1>
+        <p class="sub">Coalition churches across Northern California send and support gospel work in 42 countries</p>
+      </div>
+      <div class="stats" id="stats"></div>
+    </header>
+    <div id="map" role="application" aria-label="Map of sending churches and missionary fields"></div>
+  </div>
+  <div class="view-btns">
+    <button type="button" id="btn-norcal">Northern California</button>
+    <button type="button" id="btn-world">World</button>
+  </div>
+  <button type="button" class="legend-toggle" id="legendToggle">Legend</button>
+  <div class="legend" id="legend">
+    <h2>How to read this map</h2>
+    <div class="row"><span class="swatch"><img src="assets/pin-medallion-96.png?v=2" alt="" width="22" height="22" style="border-radius:50%"/></span> Sending church in Northern California</div>
+    <div class="row"><span class="swatch"><span class="field-marker" style="display:inline-block;vertical-align:middle"></span></span> Mission field (country or region)</div>
+    <div class="row"><span class="swatch"><svg width="28" height="10" aria-hidden="true"><path d="M1 8 Q 14 1 27 8" fill="none" stroke="#173027" stroke-width="1.6" stroke-dasharray="3 2" opacity=".85"/></svg></span> Church to field</div>
+    <p class="note" id="legendNote"></p>
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="data.js"></script>
+  <script>
+  (function () {
+    const DATA = window.MISSIONS_DATA;
+    const meta = DATA.meta;
+
+    document.getElementById("stats").innerHTML = [
+      [meta.churches_publishing, "Sending churches"],
+      [meta.unique_missionaries_orgs, "Missionaries & ministries"],
+      [meta.countries_reached, "Countries reached"],
+      [meta.additional_regions.length, "Broader regions"]
+    ].map(([n, l]) => `<div class="stat"><b>${n}</b><span>${l}</span></div>`).join("");
+
+    document.getElementById("legendNote").textContent =
+      "Based on what " + meta.churches_publishing + " of " + meta.churches_checked +
+      " Coalition Map churches publish online. Sensitive workers are shown at region level only, without names. Many churches support people they do not list publicly. Updated November 21, 2026 (Pacific Time).";
+
+    const map = L.map("map", {
+      worldCopyJump: true,
+      minZoom: 2,
+      maxZoom: 12,
+      zoomControl: true
+    });
+
+    L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      maxZoom: 12,
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    }).addTo(map);
+
+    const arcPane = map.createPane("arcs");
+    arcPane.style.zIndex = 350;
+    const fieldPane = map.createPane("fields");
+    fieldPane.style.zIndex = 450;
+    const churchPane = map.createPane("churches");
+    churchPane.style.zIndex = 550;
+
+    function groupListings(listings, byField) {
+      const groups = [];
+      const idx = new Map();
+      listings.forEach(function (L) {
+        const key = (L.sensitive ? "s:" : "n:") + L.display + "|" + (L.org || "") + "|" + (byField ? (L.field || "") : "") + "|" + (L.prayer_only ? "p" : "");
+        if (!idx.has(key)) {
+          idx.set(key, {
+            display: L.display,
+            org: L.org,
+            ministry: L.ministry,
+            field: L.field,
+            note: L.note,
+            prayer_only: L.prayer_only,
+            sensitive: L.sensitive,
+            churches: [],
+            count: 0
+          });
+          groups.push(idx.get(key));
+        }
+        const g = idx.get(key);
+        g.count += 1;
+        if (L.church && g.churches.indexOf(L.church) === -1) g.churches.push(L.church);
+        if (L.note && !g.note) g.note = L.note;
+      });
+      return groups;
+    }
+
+    function listingItem(g, opts) {
+      const showChurch = opts && opts.showChurch;
+      const showField = opts && opts.showField;
+      let who = g.display;
+      if (g.sensitive && g.count > 1) {
+        who = g.count + " workers — " + g.display;
+      }
+      let html = '<li><span class="who">' + escapeHtml(who) + "</span>";
+      if (g.prayer_only) html += '<span class="prayer">Prayer support</span>';
+      if (g.org) html += '<span class="org">' + escapeHtml(g.org) + "</span>";
+      if (showField && g.field) html += '<span class="field-line">' + escapeHtml(g.field) + "</span>";
+      if (g.ministry && !g.sensitive) html += '<span class="org">' + escapeHtml(g.ministry) + "</span>";
+      if (showChurch && g.churches.length) {
+        html += '<span class="org">Supported by ' + escapeHtml(g.churches.join("; ")) + "</span>";
+      }
+      if (g.note) html += '<span class="li-note">' + escapeHtml(g.note) + "</span>";
+      html += "</li>";
+      return html;
+    }
+
+    function escapeHtml(s) {
+      return String(s || "").replace(/[&<>"']/g, function (c) {
+        return ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c];
+      });
+    }
+
+    function arcPoints(lat1, lon1, lat2, lon2, bumpScale) {
+      // Draw the shorter path; allow longitudes outside [-180, 180] then split on the antimeridian.
+      let l2 = lon2;
+      if (l2 - lon1 > 180) l2 -= 360;
+      if (lon1 - l2 > 180) l2 += 360;
+      const dx = l2 - lon1, dy = lat2 - lat1;
+      const dist = Math.sqrt(dx * dx + dy * dy) || 1;
+      const bump = Math.min(28, Math.max(6, dist * 0.22)) * (bumpScale || 1);
+      // Offset the midpoint perpendicular, preferring a northward bulge for mid-latitudes.
+      let nx = -dy / dist, ny = dx / dist;
+      if (ny < 0) { nx = -nx; ny = -ny; }
+      const cx = (lon1 + l2) / 2 + nx * bump;
+      const cy = (lat1 + lat2) / 2 + ny * bump;
+      const n = Math.max(24, Math.round(dist * 1.2));
+      const pts = [];
+      for (let i = 0; i <= n; i++) {
+        const t = i / n, u = 1 - t;
+        pts.push([u * u * lat1 + 2 * u * t * cy + t * t * lat2,
+                  u * u * lon1 + 2 * u * t * cx + t * t * l2]);
+      }
+      return splitAntimeridian(pts);
+    }
+
+    function splitAntimeridian(pts) {
+      const segs = [[]];
+      for (let i = 0; i < pts.length; i++) {
+        const lat = pts[i][0];
+        let lon = pts[i][1];
+        lon = ((lon + 540) % 360) - 180;
+        const prev = segs[segs.length - 1];
+        if (prev.length) {
+          const plon = prev[prev.length - 1][1];
+          if (Math.abs(lon - plon) > 180) {
+            segs.push([[lat, lon]]);
+            continue;
+          }
+        }
+        prev.push([lat, lon]);
+      }
+      return segs.filter(function (s) { return s.length > 1; });
+    }
+
+    const arcsLayer = L.layerGroup().addTo(map);
+    const fieldsLayer = L.layerGroup().addTo(map);
+    const churchesLayer = L.layerGroup().addTo(map);
+
+    DATA.arcs.forEach(function (a, i) {
+      const bump = 0.85 + ((i * 17) % 7) * 0.05;
+      const segs = arcPoints(a.from_lat, a.from_lon, a.to_lat, a.to_lon, bump);
+      segs.forEach(function (pts) {
+        L.polyline(pts, {
+          pane: "arcs",
+          color: "#173027",
+          weight: 1.35,
+          opacity: 0.42,
+          dashArray: "5 4",
+          interactive: false
+        }).addTo(arcsLayer);
+      });
+    });
+
+    DATA.fields.forEach(function (f) {
+      const n = f.listings.length;
+      const sizeClass = n >= 8 ? "xl" : n >= 4 ? "lg" : "";
+      const size = n >= 8 ? 26 : n >= 4 ? 22 : 18;
+      const icon = L.divIcon({
+        className: "field-icon",
+        html: '<div class="field-marker ' + sizeClass + '"></div>',
+        iconSize: [size, size],
+        iconAnchor: [size / 2, size / 2],
+        popupAnchor: [0, -size / 2]
+      });
+      const groups = groupListings(f.listings, false);
+      const churches = Array.from(new Set(f.listings.map(function (L) { return L.church; })));
+      const kind = f.kind === "country" ? "Country" : "Region";
+      let html = '<div class="popup-card"><h3>' + escapeHtml(f.label) + "</h3>";
+      html += '<p class="meta">' + kind + " · " + n + " published listing" + (n === 1 ? "" : "s") +
+        " · " + churches.length + " sending church" + (churches.length === 1 ? "" : "es") + "</p><ul>";
+      groups.forEach(function (g) { html += listingItem(g, { showChurch: true }); });
+      html += "</ul></div>";
+      L.marker([f.lat, f.lon], { icon: icon, pane: "fields", title: f.label, riseOnHover: true, keyboard: true })
+        .bindPopup(html, { maxWidth: 340 })
+        .addTo(fieldsLayer);
+    });
+
+    const churchIcon = L.icon({
+      iconUrl: "assets/pin-medallion-96.png?v=2",
+      iconSize: [42, 42],
+      iconAnchor: [21, 21],
+      popupAnchor: [0, -18],
+      className: "church-icon"
+    });
+
+    DATA.churches.forEach(function (c) {
+      const groups = groupListings(c.listings, true);
+      const n = c.listings.length;
+      let html = '<div class="popup-card"><h3>' + escapeHtml(c.name) + "</h3>";
+      html += '<p class="meta">' + n + " published listing" + (n === 1 ? "" : "s") + "</p><ul>";
+      groups.forEach(function (g) { html += listingItem(g, { showField: true }); });
+      html += "</ul></div>";
+      L.marker([c.lat, c.lon], { icon: churchIcon, pane: "churches", title: c.name, riseOnHover: true, keyboard: true })
+        .bindPopup(html, { maxWidth: 340 })
+        .addTo(churchesLayer);
+    });
+
+    const norcal = L.latLngBounds(
+      DATA.churches.map(function (c) { return [c.lat, c.lon]; })
+    ).pad(0.35);
+    const worldPts = DATA.churches.map(function (c) { return [c.lat, c.lon]; })
+      .concat(DATA.fields.map(function (f) { return [f.lat, f.lon]; }));
+    const world = L.latLngBounds(worldPts).pad(0.08);
+
+    function showWorld() { map.fitBounds(world, { padding: [30, 30], maxZoom: 3 }); }
+    function showNorcal() { map.fitBounds(norcal, { padding: [40, 40], maxZoom: 8 }); }
+    const params = new URLSearchParams(location.search);
+    if (params.get("view") === "norcal") showNorcal();
+    else showWorld();
+
+    document.getElementById("btn-world").addEventListener("click", showWorld);
+    document.getElementById("btn-norcal").addEventListener("click", showNorcal);
+    document.getElementById("legendToggle").addEventListener("click", function () {
+      document.getElementById("legend").classList.toggle("open");
+    });
+
+    L.control.layers(null, {
+      "Sending churches": churchesLayer,
+      "Mission fields": fieldsLayer,
+      "Mission arcs": arcsLayer
+    }, { collapsed: true, position: "topleft" }).addTo(map);
+  })();
+  </script>
+</body>
+</html>
