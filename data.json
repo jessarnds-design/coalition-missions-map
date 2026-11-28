@@ -3,12 +3,13 @@
     "title": "Coalition Missions Impact",
     "generated": "2026-11-28",
     "timezone": "America/Los_Angeles",
-    "churches_checked": 84,
-    "churches_publishing": 31,
-    "published_listings": 207,
-    "unique_missionaries_orgs": 194,
-    "countries_reached": 48,
+    "churches_checked": 85,
+    "churches_publishing": 32,
+    "published_listings": 216,
+    "unique_missionaries_orgs": 203,
+    "countries_reached": 49,
     "countries": [
+      "Albania",
       "Argentina",
       "Brazil",
       "Cambodia",
@@ -76,8 +77,8 @@
       "Southeast Asia",
       "Western Asia"
     ],
-    "sending_churches": 31,
-    "note": "Based only on what 31 of 84 Coalition Map churches publish online. This count is cross-cultural evangelism and church planting; local outreach ministries are not counted. Sensitive workers are shown at region level only, without names. Many churches support missionaries they do not name on their websites. Doxa Church, Rocklin, was added November 27, 2026 from its public Cape Town church-plant announcement. Eight Central Valley churches were reviewed November 28, 2026."
+    "sending_churches": 32,
+    "note": "Based only on what 32 of 85 Coalition Map churches publish online. This count is cross-cultural evangelism and church planting; local outreach ministries are not counted. Sensitive workers are shown at region level only, without names. Many churches support missionaries they do not name on their websites. Doxa Church, Rocklin, was added November 27, 2026 from its public Cape Town church-plant announcement. Eight Central Valley churches and Grace Church of the Valley, Kingsburg, were reviewed November 28, 2026."
   },
   "churches": [
     {
@@ -1650,6 +1651,97 @@
       "undisclosed_count": 0
     },
     {
+      "id": "Grace Church of the Valley",
+      "name": "Grace Church of the Valley, Kingsburg",
+      "city": "Kingsburg",
+      "lat": 36.5111345,
+      "lon": -119.5485802,
+      "listings": [
+        {
+          "display": "Cory and Kristine Cramer",
+          "org": "",
+          "field": "Albania",
+          "ministry": "church plant in Pogradec; pastor, Evangelical Church of Pogradec",
+          "note": "",
+          "prayer_only": false,
+          "sensitive": false
+        },
+        {
+          "display": "Spencer and Tara Long",
+          "org": "Thrive Missions",
+          "field": "Albania",
+          "ministry": "teaching and leadership alongside the Cramers",
+          "note": "",
+          "prayer_only": false,
+          "sensitive": false
+        },
+        {
+          "display": "Shannon and Danielle Hurley",
+          "org": "Sufficiency of Scripture Ministries",
+          "field": "Uganda",
+          "ministry": "training pastors and planting churches",
+          "note": "",
+          "prayer_only": false,
+          "sensitive": false
+        },
+        {
+          "display": "John Paul and Sarah Stepanian",
+          "org": "",
+          "field": "Uganda",
+          "ministry": "pastor and Shepherd's Training College",
+          "note": "",
+          "prayer_only": false,
+          "sensitive": false
+        },
+        {
+          "display": "Hector and Indira Ortega",
+          "org": "",
+          "field": "Mexico",
+          "ministry": "church planting in Culiacán, Sinaloa",
+          "note": "",
+          "prayer_only": false,
+          "sensitive": false
+        },
+        {
+          "display": "Michael and Jordan Seehusen",
+          "org": "",
+          "field": "Fiji",
+          "ministry": "pastoral training and a church plant in Nadi",
+          "note": "",
+          "prayer_only": false,
+          "sensitive": false
+        },
+        {
+          "display": "Name withheld for security — Middle East",
+          "org": "",
+          "field": "Middle East",
+          "ministry": "",
+          "note": "",
+          "prayer_only": false,
+          "sensitive": true
+        },
+        {
+          "display": "Jack and Michelle Barley",
+          "org": "Edify NZ",
+          "field": "New Zealand",
+          "ministry": "church strengthening and pastoral training",
+          "note": "",
+          "prayer_only": false,
+          "sensitive": false
+        },
+        {
+          "display": "Andrew and Jenny Rogers",
+          "org": "Biblical Counseling Ministries Worldwide",
+          "field": "Worldwide (no single country named)",
+          "ministry": "church strengthening; training pastors and elders",
+          "note": "",
+          "prayer_only": false,
+          "sensitive": false
+        }
+      ],
+      "undisclosed_count": 0
+    },
+    {
       "id": "Grace Pointe Church",
       "name": "Grace Pointe Church, Rio Vista",
       "city": "Rio Vista",
@@ -2396,6 +2488,36 @@
       ]
     },
     {
+      "key": "Albania",
+      "label": "Albania",
+      "lat": 41.15,
+      "lon": 20.17,
+      "kind": "country",
+      "country": "Albania",
+      "listings": [
+        {
+          "display": "Cory and Kristine Cramer",
+          "org": "",
+          "ministry": "church plant in Pogradec; pastor, Evangelical Church of Pogradec",
+          "church": "Grace Church of the Valley, Kingsburg",
+          "church_id": "Grace Church of the Valley",
+          "note": "",
+          "prayer_only": false,
+          "sensitive": false
+        },
+        {
+          "display": "Spencer and Tara Long",
+          "org": "Thrive Missions",
+          "ministry": "teaching and leadership alongside the Cramers",
+          "church": "Grace Church of the Valley, Kingsburg",
+          "church_id": "Grace Church of the Valley",
+          "note": "",
+          "prayer_only": false,
+          "sensitive": false
+        }
+      ]
+    },
+    {
       "key": "Argentina",
       "label": "Argentina",
       "lat": -38.42,
@@ -3069,6 +3191,16 @@
           "ministry": "missions",
           "church": "Trinity Bible Church, Morgan Hill",
           "church_id": "Trinity Bible Church",
+          "note": "",
+          "prayer_only": false,
+          "sensitive": false
+        },
+        {
+          "display": "Michael and Jordan Seehusen",
+          "org": "",
+          "ministry": "pastoral training and a church plant in Nadi",
+          "church": "Grace Church of the Valley, Kingsburg",
+          "church_id": "Grace Church of the Valley",
           "note": "",
           "prayer_only": false,
           "sensitive": false
@@ -3762,6 +3894,16 @@
           "note": "",
           "prayer_only": false,
           "sensitive": true
+        },
+        {
+          "display": "Hector and Indira Ortega",
+          "org": "",
+          "ministry": "church planting in Culiacán, Sinaloa",
+          "church": "Grace Church of the Valley, Kingsburg",
+          "church_id": "Grace Church of the Valley",
+          "note": "",
+          "prayer_only": false,
+          "sensitive": false
         }
       ]
     },
@@ -3789,6 +3931,16 @@
           "ministry": "",
           "church": "Trinity Community Church, Clovis",
           "church_id": "Trinity Community Church",
+          "note": "",
+          "prayer_only": false,
+          "sensitive": true
+        },
+        {
+          "display": "Name withheld for security — Middle East",
+          "org": "",
+          "ministry": "",
+          "church": "Grace Church of the Valley, Kingsburg",
+          "church_id": "Grace Church of the Valley",
           "note": "",
           "prayer_only": false,
           "sensitive": true
@@ -3922,6 +4074,16 @@
           "note": "",
           "prayer_only": false,
           "sensitive": true
+        },
+        {
+          "display": "Jack and Michelle Barley",
+          "org": "Edify NZ",
+          "ministry": "church strengthening and pastoral training",
+          "church": "Grace Church of the Valley, Kingsburg",
+          "church_id": "Grace Church of the Valley",
+          "note": "",
+          "prayer_only": false,
+          "sensitive": false
         }
       ]
     },
@@ -4699,6 +4861,26 @@
           "ministry": "church planting",
           "church": "Oakhurst Evangelical Free Church",
           "church_id": "Oakhurst Evangelical Free Church",
+          "note": "",
+          "prayer_only": false,
+          "sensitive": false
+        },
+        {
+          "display": "Shannon and Danielle Hurley",
+          "org": "Sufficiency of Scripture Ministries",
+          "ministry": "training pastors and planting churches",
+          "church": "Grace Church of the Valley, Kingsburg",
+          "church_id": "Grace Church of the Valley",
+          "note": "",
+          "prayer_only": false,
+          "sensitive": false
+        },
+        {
+          "display": "John Paul and Sarah Stepanian",
+          "org": "",
+          "ministry": "pastor and Shepherd's Training College",
+          "church": "Grace Church of the Valley, Kingsburg",
+          "church_id": "Grace Church of the Valley",
           "note": "",
           "prayer_only": false,
           "sensitive": false
@@ -6144,6 +6326,60 @@
       "to_key": "Middle East",
       "to_lat": 26.5,
       "to_lon": 45.0
+    },
+    {
+      "from_id": "Grace Church of the Valley",
+      "from_name": "Grace Church of the Valley, Kingsburg",
+      "from_lat": 36.5111345,
+      "from_lon": -119.5485802,
+      "to_key": "Albania",
+      "to_lat": 41.15,
+      "to_lon": 20.17
+    },
+    {
+      "from_id": "Grace Church of the Valley",
+      "from_name": "Grace Church of the Valley, Kingsburg",
+      "from_lat": 36.5111345,
+      "from_lon": -119.5485802,
+      "to_key": "Uganda",
+      "to_lat": 1.37,
+      "to_lon": 32.29
+    },
+    {
+      "from_id": "Grace Church of the Valley",
+      "from_name": "Grace Church of the Valley, Kingsburg",
+      "from_lat": 36.5111345,
+      "from_lon": -119.5485802,
+      "to_key": "Mexico",
+      "to_lat": 23.63,
+      "to_lon": -102.55
+    },
+    {
+      "from_id": "Grace Church of the Valley",
+      "from_name": "Grace Church of the Valley, Kingsburg",
+      "from_lat": 36.5111345,
+      "from_lon": -119.5485802,
+      "to_key": "Fiji",
+      "to_lat": -17.71,
+      "to_lon": 178.07
+    },
+    {
+      "from_id": "Grace Church of the Valley",
+      "from_name": "Grace Church of the Valley, Kingsburg",
+      "from_lat": 36.5111345,
+      "from_lon": -119.5485802,
+      "to_key": "Middle East",
+      "to_lat": 26.5,
+      "to_lon": 45.0
+    },
+    {
+      "from_id": "Grace Church of the Valley",
+      "from_name": "Grace Church of the Valley, Kingsburg",
+      "from_lat": 36.5111345,
+      "from_lon": -119.5485802,
+      "to_key": "New Zealand",
+      "to_lat": -41.0,
+      "to_lon": 174.9
     }
   ],
   "shared_support": [
