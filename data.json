@@ -1,13 +1,13 @@
 {
   "meta": {
     "title": "Coalition Missions Impact",
-    "generated": "2026-11-21",
+    "generated": "2026-11-28",
     "timezone": "America/Los_Angeles",
-    "churches_checked": 76,
-    "churches_publishing": 24,
-    "published_listings": 173,
-    "unique_missionaries_orgs": 161,
-    "countries_reached": 42,
+    "churches_checked": 84,
+    "churches_publishing": 31,
+    "published_listings": 207,
+    "unique_missionaries_orgs": 194,
+    "countries_reached": 48,
     "countries": [
       "Argentina",
       "Brazil",
@@ -25,6 +25,7 @@
       "Germany",
       "Greece",
       "Guatemala",
+      "Haiti",
       "Honduras",
       "Hungary",
       "India",
@@ -37,17 +38,22 @@
       "Malawi",
       "Malaysia",
       "Mexico",
+      "New Zealand",
       "Pakistan",
       "Papua New Guinea",
       "Peru",
       "Philippines",
+      "Romania",
       "Russia",
+      "Sierra Leone",
       "South Africa",
       "South Korea",
       "South Sudan",
       "Spain",
+      "Turkey",
       "Uganda",
       "Ukraine",
+      "United Arab Emirates",
       "United Kingdom",
       "United States",
       "Venezuela"
@@ -60,18 +66,48 @@
       "Central and South America",
       "East Asia",
       "Eastern Europe",
+      "Eurasia / CIS",
       "Middle East",
       "Middle East / Europe",
       "Middle East / North Africa",
       "Muslim-majority region of Asia",
       "North Africa",
       "South Asia",
-      "Southeast Asia"
+      "Southeast Asia",
+      "Western Asia"
     ],
-    "sending_churches": 24,
-    "note": "Based only on what 24 of 76 Coalition Map churches publish online. Sensitive workers are shown at region level only, without names. Many churches support missionaries they do not name on their websites."
+    "sending_churches": 31,
+    "note": "Based only on what 31 of 84 Coalition Map churches publish online. This count is cross-cultural evangelism and church planting; local outreach ministries are not counted. Sensitive workers are shown at region level only, without names. Many churches support missionaries they do not name on their websites. Doxa Church, Rocklin, was added November 27, 2026 from its public Cape Town church-plant announcement. Eight Central Valley churches were reviewed November 28, 2026."
   },
   "churches": [
+    {
+      "id": "Abounding Grace Church",
+      "name": "Abounding Grace Church, Visalia",
+      "city": "Visalia",
+      "lat": 36.3123111,
+      "lon": -119.2743898,
+      "listings": [
+        {
+          "display": "Keith and Carmen McFaul",
+          "org": "TEAM",
+          "field": "France",
+          "ministry": "church planting",
+          "note": "",
+          "prayer_only": false,
+          "sensitive": false
+        },
+        {
+          "display": "Baruch and Bracha Maoz",
+          "org": "",
+          "field": "Israel",
+          "ministry": "writing and teaching ministry",
+          "note": "",
+          "prayer_only": false,
+          "sensitive": false
+        }
+      ],
+      "undisclosed_count": 0
+    },
     {
       "id": "Berean Baptist Church",
       "name": "Berean Baptist Church, Rohnert Park",
@@ -79,15 +115,6 @@
       "lat": 38.348493,
       "lon": -122.6950513,
       "listings": [
-        {
-          "display": "Christian Law Association",
-          "org": "Christian Law Association",
-          "field": "United States",
-          "ministry": "ministry partner (listed on church missionaries page)",
-          "note": "",
-          "prayer_only": false,
-          "sensitive": false
-        },
         {
           "display": "Dan and Debbie Morris",
           "org": "Baptist Bible Fellowship International (BBFI)",
@@ -553,15 +580,6 @@
           "sensitive": false
         },
         {
-          "display": "Ryan and Michelle Washburn",
-          "org": "",
-          "field": "California, USA",
-          "ministry": "gospel partner",
-          "note": "",
-          "prayer_only": false,
-          "sensitive": false
-        },
-        {
           "display": "Name withheld for security — Japan",
           "org": "",
           "field": "Japan",
@@ -728,6 +746,25 @@
       "undisclosed_count": 0
     },
     {
+      "id": "Doxa Church",
+      "name": "Doxa Church, Rocklin",
+      "city": "Rocklin",
+      "lat": 38.8179734,
+      "lon": -121.305953,
+      "listings": [
+        {
+          "display": "Sive Nogada",
+          "org": "Magnify Church / Great Commission Collective",
+          "field": "South Africa",
+          "ministry": "church plant pastor",
+          "note": "",
+          "prayer_only": false,
+          "sensitive": false
+        }
+      ],
+      "undisclosed_count": 0
+    },
+    {
       "id": "Evangel Bible Church of Berkeley",
       "name": "Evangel Bible Church of Berkeley",
       "city": "Berkeley",
@@ -796,6 +833,88 @@
           "note": "",
           "prayer_only": false,
           "sensitive": false
+        }
+      ],
+      "undisclosed_count": 0
+    },
+    {
+      "id": "Faith Community Bible Church",
+      "name": "Faith Community Bible Church, Winton",
+      "city": "Winton",
+      "lat": 37.3734204,
+      "lon": -120.6129156,
+      "listings": [
+        {
+          "display": "Name withheld for security — Alaska, USA",
+          "org": "",
+          "field": "Alaska, USA",
+          "ministry": "",
+          "note": "",
+          "prayer_only": false,
+          "sensitive": true
+        },
+        {
+          "display": "Name withheld for security — California, USA",
+          "org": "",
+          "field": "California, USA",
+          "ministry": "",
+          "note": "",
+          "prayer_only": false,
+          "sensitive": true
+        },
+        {
+          "display": "Name withheld for security — Hawaii, USA",
+          "org": "",
+          "field": "Hawaii, USA",
+          "ministry": "",
+          "note": "",
+          "prayer_only": false,
+          "sensitive": true
+        },
+        {
+          "display": "Name withheld for security — Nevada, USA",
+          "org": "",
+          "field": "Nevada, USA",
+          "ministry": "",
+          "note": "",
+          "prayer_only": false,
+          "sensitive": true
+        },
+        {
+          "display": "Name withheld for security — New Zealand",
+          "org": "",
+          "field": "New Zealand",
+          "ministry": "",
+          "note": "",
+          "prayer_only": false,
+          "sensitive": true
+        },
+        {
+          "display": "Name withheld for security — Peru",
+          "org": "",
+          "field": "Peru",
+          "ministry": "",
+          "note": "",
+          "prayer_only": false,
+          "sensitive": true
+        },
+        {
+          "display": "Name withheld for security — Russia",
+          "org": "",
+          "field": "Russia",
+          "ministry": "",
+          "note": "",
+          "prayer_only": false,
+          "sensitive": true
+        },
+        {
+          "display": "Name withheld for security — Sierra Leone",
+          "org": "",
+          "field": "Sierra Leone",
+          "ministry": "",
+          "note": "",
+          "prayer_only": false,
+          "sensitive": true
         }
       ],
       "undisclosed_count": 0
@@ -1046,28 +1165,10 @@
           "sensitive": false
         },
         {
-          "display": "Frank Erb",
-          "org": "Capitol Commission California",
-          "field": "California, USA",
-          "ministry": "capitol chaplaincy / outreach",
-          "note": "",
-          "prayer_only": false,
-          "sensitive": false
-        },
-        {
           "display": "Grace Stephens",
           "org": "",
           "field": "South Africa",
           "ministry": "missions",
-          "note": "",
-          "prayer_only": false,
-          "sensitive": false
-        },
-        {
-          "display": "Matt and Marla Hanna",
-          "org": "",
-          "field": "Texas, USA",
-          "ministry": "church revitalization",
           "note": "",
           "prayer_only": false,
           "sensitive": false
@@ -1128,24 +1229,6 @@
           "sensitive": false
         },
         {
-          "display": "Christian Challenge UCSC",
-          "org": "Christian Challenge UCSC",
-          "field": "California, USA",
-          "ministry": "campus outreach and student discipleship",
-          "note": "",
-          "prayer_only": false,
-          "sensitive": false
-        },
-        {
-          "display": "Kyle Ishihara",
-          "org": "Soon Movement",
-          "field": "California, USA",
-          "ministry": "college ministry, evangelism, and discipleship",
-          "note": "",
-          "prayer_only": false,
-          "sensitive": false
-        },
-        {
           "display": "Phil and Heather Boettcher",
           "org": "",
           "field": "France",
@@ -1159,6 +1242,61 @@
           "org": "Theological Bible Academy",
           "field": "Croatia",
           "ministry": "theological training of church leaders and planters; preaching, discipleship, and children's ministry",
+          "note": "",
+          "prayer_only": false,
+          "sensitive": false
+        }
+      ],
+      "undisclosed_count": 0
+    },
+    {
+      "id": "Grace Bible Church (Visalia)",
+      "name": "Grace Bible Church, Visalia",
+      "city": "Visalia",
+      "lat": 36.3300077,
+      "lon": -119.3057748,
+      "listings": [
+        {
+          "display": "Joy and Jackie Benjamine",
+          "org": "",
+          "field": "India",
+          "ministry": "pastoral ministry",
+          "note": "",
+          "prayer_only": false,
+          "sensitive": false
+        },
+        {
+          "display": "Tim and Michelle Cantrell",
+          "org": "",
+          "field": "South Africa",
+          "ministry": "Antioch Bible Church and Shepherds Seminary",
+          "note": "",
+          "prayer_only": false,
+          "sensitive": false
+        },
+        {
+          "display": "Bozo and Marijana Crnkovic",
+          "org": "",
+          "field": "Croatia",
+          "ministry": "church planting",
+          "note": "",
+          "prayer_only": false,
+          "sensitive": false
+        },
+        {
+          "display": "O. and Valsamma Georgekutty",
+          "org": "",
+          "field": "India",
+          "ministry": "evangelism, house visits, and Bible studies",
+          "note": "",
+          "prayer_only": false,
+          "sensitive": false
+        },
+        {
+          "display": "The Schneider Family",
+          "org": "",
+          "field": "Chile",
+          "ministry": "Iglesia Biblica Por Gracia and Seminario Biblico de Expositores",
           "note": "",
           "prayer_only": false,
           "sensitive": false
@@ -1491,15 +1629,6 @@
           "sensitive": false
         },
         {
-          "display": "Redwood Gospel Mission",
-          "org": "Redwood Gospel Mission",
-          "field": "California, USA",
-          "ministry": "transitional housing and faith-based recovery (listed on the church missions page)",
-          "note": "",
-          "prayer_only": false,
-          "sensitive": false
-        },
-        {
           "display": "Rick and Eunie Johnson",
           "org": "International Action Ministries",
           "field": "Central and South America",
@@ -1535,15 +1664,6 @@
           "note": "",
           "prayer_only": false,
           "sensitive": false
-        },
-        {
-          "display": "Union Gospel Mission Sacramento",
-          "org": "Union Gospel Mission Sacramento",
-          "field": "California, USA",
-          "ministry": "local gospel and mercy ministry (listed on the church missions page)",
-          "note": "",
-          "prayer_only": false,
-          "sensitive": false
         }
       ],
       "undisclosed_count": 0
@@ -1568,6 +1688,88 @@
       "undisclosed_count": 0
     },
     {
+      "id": "Living Word Fellowship",
+      "name": "Living Word Fellowship, Porterville",
+      "city": "Porterville",
+      "lat": 36.0915989,
+      "lon": -119.0424777,
+      "listings": [
+        {
+          "display": "Tony Heredia",
+          "org": "Christians in Action",
+          "field": "Field not stated on the church's public page",
+          "ministry": "missions",
+          "note": "",
+          "prayer_only": false,
+          "sensitive": false
+        },
+        {
+          "display": "Name withheld for security — Mexico",
+          "org": "",
+          "field": "Mexico",
+          "ministry": "",
+          "note": "",
+          "prayer_only": false,
+          "sensitive": true
+        },
+        {
+          "display": "Iris Paul",
+          "org": "Reaching Hand Society",
+          "field": "India",
+          "ministry": "missions",
+          "note": "",
+          "prayer_only": false,
+          "sensitive": false
+        },
+        {
+          "display": "Daniel and Avetha Victor",
+          "org": "Reaching Hand Society",
+          "field": "India",
+          "ministry": "missions",
+          "note": "",
+          "prayer_only": false,
+          "sensitive": false
+        },
+        {
+          "display": "Name withheld for security — India",
+          "org": "",
+          "field": "India",
+          "ministry": "",
+          "note": "",
+          "prayer_only": false,
+          "sensitive": true
+        },
+        {
+          "display": "Name withheld for security — India",
+          "org": "",
+          "field": "India",
+          "ministry": "",
+          "note": "",
+          "prayer_only": false,
+          "sensitive": true
+        },
+        {
+          "display": "Name withheld for security — India",
+          "org": "",
+          "field": "India",
+          "ministry": "",
+          "note": "",
+          "prayer_only": false,
+          "sensitive": true
+        },
+        {
+          "display": "Alex Cotrina",
+          "org": "",
+          "field": "Peru",
+          "ministry": "pastor and evangelist",
+          "note": "",
+          "prayer_only": false,
+          "sensitive": false
+        }
+      ],
+      "undisclosed_count": 0
+    },
+    {
       "id": "Lone Hill Church",
       "name": "Lone Hill Church, Los Gatos",
       "city": "Los Gatos/San Jose",
@@ -1579,15 +1781,6 @@
           "org": "Jordan Evangelical Theological Seminary (JETS)",
           "field": "Jordan",
           "ministry": "seminary leadership, teaching, publishing, and women's ministry",
-          "note": "",
-          "prayer_only": false,
-          "sensitive": false
-        },
-        {
-          "display": "Josh and Karen Fedelem",
-          "org": "Child Evangelism Fellowship (CEF) Alaska",
-          "field": "Alaska, USA",
-          "ministry": "youth camp, evangelism, and clubs",
           "note": "",
           "prayer_only": false,
           "sensitive": false
@@ -1642,6 +1835,70 @@
       "undisclosed_count": 0
     },
     {
+      "id": "Oakhurst Evangelical Free Church",
+      "name": "Oakhurst Evangelical Free Church",
+      "city": "Oakhurst",
+      "lat": 37.330142,
+      "lon": -119.627582,
+      "listings": [
+        {
+          "display": "Scott and Barb Harbert",
+          "org": "Africa Inland Mission",
+          "field": "Kenya",
+          "ministry": "missions",
+          "note": "",
+          "prayer_only": false,
+          "sensitive": false
+        },
+        {
+          "display": "Cyprian Masembe",
+          "org": "Frontier Force Christian Ministries",
+          "field": "Uganda",
+          "ministry": "church planting",
+          "note": "",
+          "prayer_only": false,
+          "sensitive": false
+        },
+        {
+          "display": "Name withheld for security — Southeast Asia",
+          "org": "",
+          "field": "Southeast Asia",
+          "ministry": "",
+          "note": "",
+          "prayer_only": false,
+          "sensitive": true
+        },
+        {
+          "display": "Nickolay Revtov",
+          "org": "Evangelism Explosion International / Heart to Heart",
+          "field": "Eurasia / CIS",
+          "ministry": "evangelism training",
+          "note": "",
+          "prayer_only": false,
+          "sensitive": false
+        },
+        {
+          "display": "Jews for Jesus",
+          "org": "Jews for Jesus",
+          "field": "California, USA",
+          "ministry": "worldwide Jewish outreach",
+          "note": "The church names Steve and Janie-sue Wertheim.",
+          "prayer_only": false,
+          "sensitive": false
+        },
+        {
+          "display": "Name withheld for security — Western Asia",
+          "org": "",
+          "field": "Western Asia",
+          "ministry": "",
+          "note": "",
+          "prayer_only": false,
+          "sensitive": true
+        }
+      ],
+      "undisclosed_count": 0
+    },
+    {
       "id": "Orchard Community Church",
       "name": "Orchard Community Church, Campbell",
       "city": "Campbell",
@@ -1653,15 +1910,6 @@
           "org": "Casa Tabito",
           "field": "Guatemala",
           "ministry": "global ministry partner (2023 short-term team hosted here)",
-          "note": "",
-          "prayer_only": false,
-          "sensitive": false
-        },
-        {
-          "display": "Rigo Lopez",
-          "org": "Fellowship of Christian Athletes",
-          "field": "California, USA",
-          "ministry": "sports evangelism and discipleship",
           "note": "",
           "prayer_only": false,
           "sensitive": false
@@ -1958,6 +2206,142 @@
         }
       ],
       "undisclosed_count": 0
+    },
+    {
+      "id": "Trinity Community Church",
+      "name": "Trinity Community Church, Clovis",
+      "city": "Clovis",
+      "lat": 36.91286,
+      "lon": -119.7266236,
+      "listings": [
+        {
+          "display": "Philip and Jennifer Adams",
+          "org": "",
+          "field": "France",
+          "ministry": "missions",
+          "note": "",
+          "prayer_only": false,
+          "sensitive": false
+        },
+        {
+          "display": "Name withheld for security — North Africa",
+          "org": "",
+          "field": "North Africa",
+          "ministry": "",
+          "note": "",
+          "prayer_only": false,
+          "sensitive": true
+        },
+        {
+          "display": "Evangelical Community Church of Abu Dhabi",
+          "org": "",
+          "field": "United Arab Emirates",
+          "ministry": "church partner",
+          "note": "",
+          "prayer_only": false,
+          "sensitive": false
+        },
+        {
+          "display": "Hakan and Seray Guven",
+          "org": "",
+          "field": "Turkey",
+          "ministry": "missions",
+          "note": "",
+          "prayer_only": false,
+          "sensitive": false
+        },
+        {
+          "display": "HaitiGo",
+          "org": "HaitiGo",
+          "field": "Haiti",
+          "ministry": "ministry",
+          "note": "",
+          "prayer_only": false,
+          "sensitive": false
+        },
+        {
+          "display": "HeartCry Missionary Society",
+          "org": "HeartCry Missionary Society",
+          "field": "Field not stated on the church's public page",
+          "ministry": "missions agency",
+          "note": "",
+          "prayer_only": false,
+          "sensitive": false
+        },
+        {
+          "display": "Kenneth and Monica Luse",
+          "org": "",
+          "field": "Romania",
+          "ministry": "missions",
+          "note": "",
+          "prayer_only": false,
+          "sensitive": false
+        },
+        {
+          "display": "Roman and Ana Males",
+          "org": "",
+          "field": "Romania",
+          "ministry": "missions",
+          "note": "",
+          "prayer_only": false,
+          "sensitive": false
+        },
+        {
+          "display": "Nathan and Abigail McBroom",
+          "org": "",
+          "field": "Field not stated on the church's public page",
+          "ministry": "missions",
+          "note": "",
+          "prayer_only": false,
+          "sensitive": false
+        },
+        {
+          "display": "Ciprian Moisuc",
+          "org": "",
+          "field": "Romania",
+          "ministry": "missions",
+          "note": "",
+          "prayer_only": false,
+          "sensitive": false
+        },
+        {
+          "display": "Daniel Popa",
+          "org": "",
+          "field": "Romania",
+          "ministry": "missions",
+          "note": "",
+          "prayer_only": false,
+          "sensitive": false
+        },
+        {
+          "display": "Romanian Missionary Society",
+          "org": "Romanian Missionary Society",
+          "field": "Romania",
+          "ministry": "missions agency",
+          "note": "",
+          "prayer_only": false,
+          "sensitive": false
+        },
+        {
+          "display": "Michael and Yelena Sysoyev",
+          "org": "",
+          "field": "Ukraine",
+          "ministry": "missions",
+          "note": "",
+          "prayer_only": false,
+          "sensitive": false
+        },
+        {
+          "display": "Name withheld for security — Middle East",
+          "org": "",
+          "field": "Middle East",
+          "ministry": "",
+          "note": "",
+          "prayer_only": false,
+          "sensitive": true
+        }
+      ],
+      "undisclosed_count": 0
     }
   ],
   "fields": [
@@ -2000,14 +2384,14 @@
       "country": "United States",
       "listings": [
         {
-          "display": "Josh and Karen Fedelem",
-          "org": "Child Evangelism Fellowship (CEF) Alaska",
-          "ministry": "youth camp, evangelism, and clubs",
-          "church": "Lone Hill Church, Los Gatos",
-          "church_id": "Lone Hill Church",
+          "display": "Name withheld for security — Alaska, USA",
+          "org": "",
+          "ministry": "",
+          "church": "Faith Community Bible Church, Winton",
+          "church_id": "Faith Community Bible Church",
           "note": "",
           "prayer_only": false,
-          "sensitive": false
+          "sensitive": true
         }
       ]
     },
@@ -2210,16 +2594,6 @@
           "sensitive": false
         },
         {
-          "display": "Ryan and Michelle Washburn",
-          "org": "",
-          "ministry": "gospel partner",
-          "church": "Community Bible Church, Vallejo",
-          "church_id": "Community Bible Church (Vallejo)",
-          "note": "",
-          "prayer_only": false,
-          "sensitive": false
-        },
-        {
           "display": "The Cornerstone Bible Church",
           "org": "",
           "ministry": "church plant sent by CBC",
@@ -2260,36 +2634,6 @@
           "sensitive": false
         },
         {
-          "display": "Frank Erb",
-          "org": "Capitol Commission California",
-          "ministry": "capitol chaplaincy / outreach",
-          "church": "Gold Country Baptist Church, Shingle Springs",
-          "church_id": "Gold Country Baptist Church",
-          "note": "",
-          "prayer_only": false,
-          "sensitive": false
-        },
-        {
-          "display": "Christian Challenge UCSC",
-          "org": "Christian Challenge UCSC",
-          "ministry": "campus outreach and student discipleship",
-          "church": "Gospel Community Church, Santa Cruz",
-          "church_id": "Gospel Community Church (Santa Cruz)",
-          "note": "",
-          "prayer_only": false,
-          "sensitive": false
-        },
-        {
-          "display": "Kyle Ishihara",
-          "org": "Soon Movement",
-          "ministry": "college ministry, evangelism, and discipleship",
-          "church": "Gospel Community Church, Santa Cruz",
-          "church_id": "Gospel Community Church (Santa Cruz)",
-          "note": "",
-          "prayer_only": false,
-          "sensitive": false
-        },
-        {
           "display": "Jews for Jesus",
           "org": "Jews for Jesus",
           "ministry": "Jewish evangelism",
@@ -2310,42 +2654,32 @@
           "sensitive": false
         },
         {
-          "display": "Redwood Gospel Mission",
-          "org": "Redwood Gospel Mission",
-          "ministry": "transitional housing and faith-based recovery (listed on the church missions page)",
-          "church": "Grace Church of Santa Rosa",
-          "church_id": "Grace Church of Santa Rosa",
-          "note": "",
-          "prayer_only": false,
-          "sensitive": false
-        },
-        {
-          "display": "Union Gospel Mission Sacramento",
-          "org": "Union Gospel Mission Sacramento",
-          "ministry": "local gospel and mercy ministry (listed on the church missions page)",
-          "church": "Grace Pointe Church, Rio Vista",
-          "church_id": "Grace Pointe Church",
-          "note": "",
-          "prayer_only": false,
-          "sensitive": false
-        },
-        {
-          "display": "Rigo Lopez",
-          "org": "Fellowship of Christian Athletes",
-          "ministry": "sports evangelism and discipleship",
-          "church": "Orchard Community Church, Campbell",
-          "church_id": "Orchard Community Church",
-          "note": "",
-          "prayer_only": false,
-          "sensitive": false
-        },
-        {
           "display": "Tim and Peggy Wong",
           "org": "",
           "ministry": "missions",
           "church": "San Francisco Bible Church",
           "church_id": "San Francisco Bible Church",
           "note": "",
+          "prayer_only": false,
+          "sensitive": false
+        },
+        {
+          "display": "Name withheld for security — California, USA",
+          "org": "",
+          "ministry": "",
+          "church": "Faith Community Bible Church, Winton",
+          "church_id": "Faith Community Bible Church",
+          "note": "",
+          "prayer_only": false,
+          "sensitive": true
+        },
+        {
+          "display": "Jews for Jesus",
+          "org": "Jews for Jesus",
+          "ministry": "worldwide Jewish outreach",
+          "church": "Oakhurst Evangelical Free Church",
+          "church_id": "Oakhurst Evangelical Free Church",
+          "note": "The church names Steve and Janie-sue Wertheim.",
           "prayer_only": false,
           "sensitive": false
         }
@@ -2468,6 +2802,16 @@
           "note": "Retired/emeritus; the church notes that support now goes to a fund to train Chilean pastors.",
           "prayer_only": false,
           "sensitive": false
+        },
+        {
+          "display": "The Schneider Family",
+          "org": "",
+          "ministry": "Iglesia Biblica Por Gracia and Seminario Biblico de Expositores",
+          "church": "Grace Bible Church, Visalia",
+          "church_id": "Grace Bible Church (Visalia)",
+          "note": "",
+          "prayer_only": false,
+          "sensitive": false
         }
       ]
     },
@@ -2545,6 +2889,16 @@
           "ministry": "theological training of church leaders and planters; preaching, discipleship, and children's ministry",
           "church": "Gospel Community Church, Santa Cruz",
           "church_id": "Gospel Community Church (Santa Cruz)",
+          "note": "",
+          "prayer_only": false,
+          "sensitive": false
+        },
+        {
+          "display": "Bozo and Marijana Crnkovic",
+          "org": "",
+          "ministry": "church planting",
+          "church": "Grace Bible Church, Visalia",
+          "church_id": "Grace Bible Church (Visalia)",
           "note": "",
           "prayer_only": false,
           "sensitive": false
@@ -2682,6 +3036,26 @@
       ]
     },
     {
+      "key": "Eurasia / CIS",
+      "label": "Eurasia / CIS",
+      "lat": 50.0,
+      "lon": 70.0,
+      "kind": "region",
+      "country": "",
+      "listings": [
+        {
+          "display": "Nickolay Revtov",
+          "org": "Evangelism Explosion International / Heart to Heart",
+          "ministry": "evangelism training",
+          "church": "Oakhurst Evangelical Free Church",
+          "church_id": "Oakhurst Evangelical Free Church",
+          "note": "",
+          "prayer_only": false,
+          "sensitive": false
+        }
+      ]
+    },
+    {
       "key": "Fiji",
       "label": "Fiji",
       "lat": -17.71,
@@ -2715,6 +3089,26 @@
           "ministry": "church planting, evangelism, and local-church partnership",
           "church": "Gospel Community Church, Santa Cruz",
           "church_id": "Gospel Community Church (Santa Cruz)",
+          "note": "",
+          "prayer_only": false,
+          "sensitive": false
+        },
+        {
+          "display": "Philip and Jennifer Adams",
+          "org": "",
+          "ministry": "missions",
+          "church": "Trinity Community Church, Clovis",
+          "church_id": "Trinity Community Church",
+          "note": "",
+          "prayer_only": false,
+          "sensitive": false
+        },
+        {
+          "display": "Keith and Carmen McFaul",
+          "org": "TEAM",
+          "ministry": "church planting",
+          "church": "Abounding Grace Church, Visalia",
+          "church_id": "Abounding Grace Church",
           "note": "",
           "prayer_only": false,
           "sensitive": false
@@ -2812,6 +3206,26 @@
       ]
     },
     {
+      "key": "Haiti",
+      "label": "Haiti",
+      "lat": 19.0,
+      "lon": -72.3,
+      "kind": "country",
+      "country": "Haiti",
+      "listings": [
+        {
+          "display": "HaitiGo",
+          "org": "HaitiGo",
+          "ministry": "ministry",
+          "church": "Trinity Community Church, Clovis",
+          "church_id": "Trinity Community Church",
+          "note": "",
+          "prayer_only": false,
+          "sensitive": false
+        }
+      ]
+    },
+    {
       "key": "Hawaii, USA",
       "label": "Hawaii, USA",
       "lat": 20.8,
@@ -2828,6 +3242,16 @@
           "note": "",
           "prayer_only": false,
           "sensitive": false
+        },
+        {
+          "display": "Name withheld for security — Hawaii, USA",
+          "org": "",
+          "ministry": "",
+          "church": "Faith Community Bible Church, Winton",
+          "church_id": "Faith Community Bible Church",
+          "note": "",
+          "prayer_only": false,
+          "sensitive": true
         }
       ]
     },
@@ -2978,6 +3402,76 @@
           "note": "",
           "prayer_only": false,
           "sensitive": false
+        },
+        {
+          "display": "Iris Paul",
+          "org": "Reaching Hand Society",
+          "ministry": "missions",
+          "church": "Living Word Fellowship, Porterville",
+          "church_id": "Living Word Fellowship",
+          "note": "",
+          "prayer_only": false,
+          "sensitive": false
+        },
+        {
+          "display": "Daniel and Avetha Victor",
+          "org": "Reaching Hand Society",
+          "ministry": "missions",
+          "church": "Living Word Fellowship, Porterville",
+          "church_id": "Living Word Fellowship",
+          "note": "",
+          "prayer_only": false,
+          "sensitive": false
+        },
+        {
+          "display": "Name withheld for security — India",
+          "org": "",
+          "ministry": "",
+          "church": "Living Word Fellowship, Porterville",
+          "church_id": "Living Word Fellowship",
+          "note": "",
+          "prayer_only": false,
+          "sensitive": true
+        },
+        {
+          "display": "Name withheld for security — India",
+          "org": "",
+          "ministry": "",
+          "church": "Living Word Fellowship, Porterville",
+          "church_id": "Living Word Fellowship",
+          "note": "",
+          "prayer_only": false,
+          "sensitive": true
+        },
+        {
+          "display": "Name withheld for security — India",
+          "org": "",
+          "ministry": "",
+          "church": "Living Word Fellowship, Porterville",
+          "church_id": "Living Word Fellowship",
+          "note": "",
+          "prayer_only": false,
+          "sensitive": true
+        },
+        {
+          "display": "Joy and Jackie Benjamine",
+          "org": "",
+          "ministry": "pastoral ministry",
+          "church": "Grace Bible Church, Visalia",
+          "church_id": "Grace Bible Church (Visalia)",
+          "note": "",
+          "prayer_only": false,
+          "sensitive": false
+        },
+        {
+          "display": "O. and Valsamma Georgekutty",
+          "org": "",
+          "ministry": "evangelism, house visits, and Bible studies",
+          "church": "Grace Bible Church, Visalia",
+          "church_id": "Grace Bible Church (Visalia)",
+          "note": "",
+          "prayer_only": false,
+          "sensitive": false
         }
       ]
     },
@@ -2995,6 +3489,16 @@
           "ministry": "proclaiming the gospel to Jewish people",
           "church": "Grace Church of Napa Valley",
           "church_id": "Grace Church of Napa Valley",
+          "note": "",
+          "prayer_only": false,
+          "sensitive": false
+        },
+        {
+          "display": "Baruch and Bracha Maoz",
+          "org": "",
+          "ministry": "writing and teaching ministry",
+          "church": "Abounding Grace Church, Visalia",
+          "church_id": "Abounding Grace Church",
           "note": "",
           "prayer_only": false,
           "sensitive": false
@@ -3105,6 +3609,16 @@
           "ministry": "missions",
           "church": "Berean Baptist Church, Rohnert Park",
           "church_id": "Berean Baptist Church",
+          "note": "",
+          "prayer_only": false,
+          "sensitive": false
+        },
+        {
+          "display": "Scott and Barb Harbert",
+          "org": "Africa Inland Mission",
+          "ministry": "missions",
+          "church": "Oakhurst Evangelical Free Church",
+          "church_id": "Oakhurst Evangelical Free Church",
           "note": "",
           "prayer_only": false,
           "sensitive": false
@@ -3238,6 +3752,16 @@
           "note": "",
           "prayer_only": false,
           "sensitive": false
+        },
+        {
+          "display": "Name withheld for security — Mexico",
+          "org": "",
+          "ministry": "",
+          "church": "Living Word Fellowship, Porterville",
+          "church_id": "Living Word Fellowship",
+          "note": "",
+          "prayer_only": false,
+          "sensitive": true
         }
       ]
     },
@@ -3255,6 +3779,16 @@
           "ministry": "",
           "church": "First Baptist Church, Weaverville",
           "church_id": "First Baptist Church (Weaverville)",
+          "note": "",
+          "prayer_only": false,
+          "sensitive": true
+        },
+        {
+          "display": "Name withheld for security — Middle East",
+          "org": "",
+          "ministry": "",
+          "church": "Trinity Community Church, Clovis",
+          "church_id": "Trinity Community Church",
           "note": "",
           "prayer_only": false,
           "sensitive": true
@@ -3358,6 +3892,36 @@
           "note": "",
           "prayer_only": false,
           "sensitive": false
+        },
+        {
+          "display": "Name withheld for security — Nevada, USA",
+          "org": "",
+          "ministry": "",
+          "church": "Faith Community Bible Church, Winton",
+          "church_id": "Faith Community Bible Church",
+          "note": "",
+          "prayer_only": false,
+          "sensitive": true
+        }
+      ]
+    },
+    {
+      "key": "New Zealand",
+      "label": "New Zealand",
+      "lat": -41.0,
+      "lon": 174.9,
+      "kind": "country",
+      "country": "New Zealand",
+      "listings": [
+        {
+          "display": "Name withheld for security — New Zealand",
+          "org": "",
+          "ministry": "",
+          "church": "Faith Community Bible Church, Winton",
+          "church_id": "Faith Community Bible Church",
+          "note": "",
+          "prayer_only": false,
+          "sensitive": true
         }
       ]
     },
@@ -3405,6 +3969,16 @@
           "ministry": "",
           "church": "Grace Church of Napa Valley",
           "church_id": "Grace Church of Napa Valley",
+          "note": "",
+          "prayer_only": false,
+          "sensitive": true
+        },
+        {
+          "display": "Name withheld for security — North Africa",
+          "org": "",
+          "ministry": "",
+          "church": "Trinity Community Church, Clovis",
+          "church_id": "Trinity Community Church",
           "note": "",
           "prayer_only": false,
           "sensitive": true
@@ -3478,6 +4052,26 @@
           "note": "",
           "prayer_only": false,
           "sensitive": false
+        },
+        {
+          "display": "Alex Cotrina",
+          "org": "",
+          "ministry": "pastor and evangelist",
+          "church": "Living Word Fellowship, Porterville",
+          "church_id": "Living Word Fellowship",
+          "note": "",
+          "prayer_only": false,
+          "sensitive": false
+        },
+        {
+          "display": "Name withheld for security — Peru",
+          "org": "",
+          "ministry": "",
+          "church": "Faith Community Bible Church, Winton",
+          "church_id": "Faith Community Bible Church",
+          "note": "",
+          "prayer_only": false,
+          "sensitive": true
         }
       ]
     },
@@ -3602,6 +4196,66 @@
       ]
     },
     {
+      "key": "Romania",
+      "label": "Romania",
+      "lat": 45.9,
+      "lon": 25.0,
+      "kind": "country",
+      "country": "Romania",
+      "listings": [
+        {
+          "display": "Kenneth and Monica Luse",
+          "org": "",
+          "ministry": "missions",
+          "church": "Trinity Community Church, Clovis",
+          "church_id": "Trinity Community Church",
+          "note": "",
+          "prayer_only": false,
+          "sensitive": false
+        },
+        {
+          "display": "Roman and Ana Males",
+          "org": "",
+          "ministry": "missions",
+          "church": "Trinity Community Church, Clovis",
+          "church_id": "Trinity Community Church",
+          "note": "",
+          "prayer_only": false,
+          "sensitive": false
+        },
+        {
+          "display": "Ciprian Moisuc",
+          "org": "",
+          "ministry": "missions",
+          "church": "Trinity Community Church, Clovis",
+          "church_id": "Trinity Community Church",
+          "note": "",
+          "prayer_only": false,
+          "sensitive": false
+        },
+        {
+          "display": "Daniel Popa",
+          "org": "",
+          "ministry": "missions",
+          "church": "Trinity Community Church, Clovis",
+          "church_id": "Trinity Community Church",
+          "note": "",
+          "prayer_only": false,
+          "sensitive": false
+        },
+        {
+          "display": "Romanian Missionary Society",
+          "org": "Romanian Missionary Society",
+          "ministry": "missions agency",
+          "church": "Trinity Community Church, Clovis",
+          "church_id": "Trinity Community Church",
+          "note": "",
+          "prayer_only": false,
+          "sensitive": false
+        }
+      ]
+    },
+    {
       "key": "Russia",
       "label": "Russia",
       "lat": 61.52,
@@ -3628,6 +4282,36 @@
           "note": "",
           "prayer_only": false,
           "sensitive": false
+        },
+        {
+          "display": "Name withheld for security — Russia",
+          "org": "",
+          "ministry": "",
+          "church": "Faith Community Bible Church, Winton",
+          "church_id": "Faith Community Bible Church",
+          "note": "",
+          "prayer_only": false,
+          "sensitive": true
+        }
+      ]
+    },
+    {
+      "key": "Sierra Leone",
+      "label": "Sierra Leone",
+      "lat": 8.5,
+      "lon": -11.8,
+      "kind": "country",
+      "country": "Sierra Leone",
+      "listings": [
+        {
+          "display": "Name withheld for security — Sierra Leone",
+          "org": "",
+          "ministry": "",
+          "church": "Faith Community Bible Church, Winton",
+          "church_id": "Faith Community Bible Church",
+          "note": "",
+          "prayer_only": false,
+          "sensitive": true
         }
       ]
     },
@@ -3695,6 +4379,26 @@
           "ministry": "missions",
           "church": "Gold Country Baptist Church, Shingle Springs",
           "church_id": "Gold Country Baptist Church",
+          "note": "",
+          "prayer_only": false,
+          "sensitive": false
+        },
+        {
+          "display": "Tim and Michelle Cantrell",
+          "org": "",
+          "ministry": "Antioch Bible Church and Shepherds Seminary",
+          "church": "Grace Bible Church, Visalia",
+          "church_id": "Grace Bible Church (Visalia)",
+          "note": "",
+          "prayer_only": false,
+          "sensitive": false
+        },
+        {
+          "display": "Sive Nogada",
+          "org": "Magnify Church / Great Commission Collective",
+          "ministry": "church plant pastor",
+          "church": "Doxa Church, Rocklin",
+          "church_id": "Doxa Church",
           "note": "",
           "prayer_only": false,
           "sensitive": false
@@ -3818,6 +4522,16 @@
           "note": "",
           "prayer_only": false,
           "sensitive": true
+        },
+        {
+          "display": "Name withheld for security — Southeast Asia",
+          "org": "",
+          "ministry": "",
+          "church": "Oakhurst Evangelical Free Church",
+          "church_id": "Oakhurst Evangelical Free Church",
+          "note": "",
+          "prayer_only": false,
+          "sensitive": true
         }
       ]
     },
@@ -3892,19 +4606,19 @@
       ]
     },
     {
-      "key": "Texas, USA",
-      "label": "Texas, USA",
-      "lat": 31.45,
-      "lon": -99.3,
+      "key": "Turkey",
+      "label": "Turkey",
+      "lat": 39.0,
+      "lon": 35.2,
       "kind": "country",
-      "country": "United States",
+      "country": "Turkey",
       "listings": [
         {
-          "display": "Matt and Marla Hanna",
+          "display": "Hakan and Seray Guven",
           "org": "",
-          "ministry": "church revitalization",
-          "church": "Gold Country Baptist Church, Shingle Springs",
-          "church_id": "Gold Country Baptist Church",
+          "ministry": "missions",
+          "church": "Trinity Community Church, Clovis",
+          "church_id": "Trinity Community Church",
           "note": "",
           "prayer_only": false,
           "sensitive": false
@@ -3978,6 +4692,16 @@
           "note": "",
           "prayer_only": false,
           "sensitive": false
+        },
+        {
+          "display": "Cyprian Masembe",
+          "org": "Frontier Force Christian Ministries",
+          "ministry": "church planting",
+          "church": "Oakhurst Evangelical Free Church",
+          "church_id": "Oakhurst Evangelical Free Church",
+          "note": "",
+          "prayer_only": false,
+          "sensitive": false
         }
       ]
     },
@@ -3995,6 +4719,36 @@
           "ministry": "gospel partner",
           "church": "Community Bible Church, Vallejo",
           "church_id": "Community Bible Church (Vallejo)",
+          "note": "",
+          "prayer_only": false,
+          "sensitive": false
+        },
+        {
+          "display": "Michael and Yelena Sysoyev",
+          "org": "",
+          "ministry": "missions",
+          "church": "Trinity Community Church, Clovis",
+          "church_id": "Trinity Community Church",
+          "note": "",
+          "prayer_only": false,
+          "sensitive": false
+        }
+      ]
+    },
+    {
+      "key": "United Arab Emirates",
+      "label": "United Arab Emirates",
+      "lat": 23.4,
+      "lon": 54.0,
+      "kind": "country",
+      "country": "United Arab Emirates",
+      "listings": [
+        {
+          "display": "Evangelical Community Church of Abu Dhabi",
+          "org": "",
+          "ministry": "church partner",
+          "church": "Trinity Community Church, Clovis",
+          "church_id": "Trinity Community Church",
           "note": "",
           "prayer_only": false,
           "sensitive": false
@@ -4039,16 +4793,6 @@
       "kind": "country",
       "country": "United States",
       "listings": [
-        {
-          "display": "Christian Law Association",
-          "org": "Christian Law Association",
-          "ministry": "ministry partner (listed on church missionaries page)",
-          "church": "Berean Baptist Church, Rohnert Park",
-          "church_id": "Berean Baptist Church",
-          "note": "",
-          "prayer_only": false,
-          "sensitive": false
-        },
         {
           "display": "Spirit of Martyrdom",
           "org": "Spirit of Martyrdom",
@@ -4100,17 +4844,46 @@
           "sensitive": false
         }
       ]
+    },
+    {
+      "key": "Western Asia",
+      "label": "Western Asia",
+      "lat": 33.0,
+      "lon": 44.0,
+      "kind": "region",
+      "country": "",
+      "listings": [
+        {
+          "display": "Name withheld for security — Western Asia",
+          "org": "",
+          "ministry": "",
+          "church": "Oakhurst Evangelical Free Church",
+          "church_id": "Oakhurst Evangelical Free Church",
+          "note": "",
+          "prayer_only": false,
+          "sensitive": true
+        }
+      ]
     }
   ],
   "arcs": [
     {
-      "from_id": "Berean Baptist Church",
-      "from_name": "Berean Baptist Church, Rohnert Park",
-      "from_lat": 38.348493,
-      "from_lon": -122.6950513,
-      "to_key": "United States",
-      "to_lat": 39.83,
-      "to_lon": -98.58
+      "from_id": "Abounding Grace Church",
+      "from_name": "Abounding Grace Church, Visalia",
+      "from_lat": 36.3123111,
+      "from_lon": -119.2743898,
+      "to_key": "France",
+      "to_lat": 46.23,
+      "to_lon": 2.21
+    },
+    {
+      "from_id": "Abounding Grace Church",
+      "from_name": "Abounding Grace Church, Visalia",
+      "from_lat": 36.3123111,
+      "from_lon": -119.2743898,
+      "to_key": "Israel",
+      "to_lat": 31.05,
+      "to_lon": 34.85
     },
     {
       "from_id": "Berean Baptist Church",
@@ -4410,6 +5183,15 @@
       "to_lon": -102.55
     },
     {
+      "from_id": "Doxa Church",
+      "from_name": "Doxa Church, Rocklin",
+      "from_lat": 38.8179734,
+      "from_lon": -121.305953,
+      "to_key": "South Africa",
+      "to_lat": -28.8,
+      "to_lon": 24.8
+    },
+    {
       "from_id": "Evangel Bible Church of Berkeley",
       "from_name": "Evangel Bible Church of Berkeley",
       "from_lat": 37.879236,
@@ -4453,6 +5235,78 @@
       "to_key": "East Asia",
       "to_lat": 35.0,
       "to_lon": 115.0
+    },
+    {
+      "from_id": "Faith Community Bible Church",
+      "from_name": "Faith Community Bible Church, Winton",
+      "from_lat": 37.3734204,
+      "from_lon": -120.6129156,
+      "to_key": "Alaska, USA",
+      "to_lat": 64.2,
+      "to_lon": -153.5
+    },
+    {
+      "from_id": "Faith Community Bible Church",
+      "from_name": "Faith Community Bible Church, Winton",
+      "from_lat": 37.3734204,
+      "from_lon": -120.6129156,
+      "to_key": "California, USA",
+      "to_lat": 37.25,
+      "to_lon": -119.75
+    },
+    {
+      "from_id": "Faith Community Bible Church",
+      "from_name": "Faith Community Bible Church, Winton",
+      "from_lat": 37.3734204,
+      "from_lon": -120.6129156,
+      "to_key": "Hawaii, USA",
+      "to_lat": 20.8,
+      "to_lon": -156.5
+    },
+    {
+      "from_id": "Faith Community Bible Church",
+      "from_name": "Faith Community Bible Church, Winton",
+      "from_lat": 37.3734204,
+      "from_lon": -120.6129156,
+      "to_key": "Nevada, USA",
+      "to_lat": 39.3,
+      "to_lon": -116.6
+    },
+    {
+      "from_id": "Faith Community Bible Church",
+      "from_name": "Faith Community Bible Church, Winton",
+      "from_lat": 37.3734204,
+      "from_lon": -120.6129156,
+      "to_key": "New Zealand",
+      "to_lat": -41.0,
+      "to_lon": 174.9
+    },
+    {
+      "from_id": "Faith Community Bible Church",
+      "from_name": "Faith Community Bible Church, Winton",
+      "from_lat": 37.3734204,
+      "from_lon": -120.6129156,
+      "to_key": "Peru",
+      "to_lat": -9.19,
+      "to_lon": -75.02
+    },
+    {
+      "from_id": "Faith Community Bible Church",
+      "from_name": "Faith Community Bible Church, Winton",
+      "from_lat": 37.3734204,
+      "from_lon": -120.6129156,
+      "to_key": "Russia",
+      "to_lat": 61.52,
+      "to_lon": 90.0
+    },
+    {
+      "from_id": "Faith Community Bible Church",
+      "from_name": "Faith Community Bible Church, Winton",
+      "from_lat": 37.3734204,
+      "from_lon": -120.6129156,
+      "to_key": "Sierra Leone",
+      "to_lat": 8.5,
+      "to_lon": -11.8
     },
     {
       "from_id": "Faith Community Church (Fremont)",
@@ -4603,24 +5457,6 @@
       "from_name": "Gold Country Baptist Church, Shingle Springs",
       "from_lat": 38.6663193,
       "from_lon": -120.9326812,
-      "to_key": "California, USA",
-      "to_lat": 37.25,
-      "to_lon": -119.75
-    },
-    {
-      "from_id": "Gold Country Baptist Church",
-      "from_name": "Gold Country Baptist Church, Shingle Springs",
-      "from_lat": 38.6663193,
-      "from_lon": -120.9326812,
-      "to_key": "Texas, USA",
-      "to_lat": 31.45,
-      "to_lon": -99.3
-    },
-    {
-      "from_id": "Gold Country Baptist Church",
-      "from_name": "Gold Country Baptist Church, Shingle Springs",
-      "from_lat": 38.6663193,
-      "from_lon": -120.9326812,
       "to_key": "Southeast Asia",
       "to_lat": 4.5,
       "to_lon": 110.0
@@ -4648,15 +5484,6 @@
       "from_name": "Gospel Community Church, Santa Cruz",
       "from_lat": 36.9782699,
       "from_lon": -122.0111571,
-      "to_key": "California, USA",
-      "to_lat": 37.25,
-      "to_lon": -119.75
-    },
-    {
-      "from_id": "Gospel Community Church (Santa Cruz)",
-      "from_name": "Gospel Community Church, Santa Cruz",
-      "from_lat": 36.9782699,
-      "from_lon": -122.0111571,
       "to_key": "France",
       "to_lat": 46.23,
       "to_lon": 2.21
@@ -4669,6 +5496,42 @@
       "to_key": "Croatia",
       "to_lat": 45.1,
       "to_lon": 15.2
+    },
+    {
+      "from_id": "Grace Bible Church (Visalia)",
+      "from_name": "Grace Bible Church, Visalia",
+      "from_lat": 36.3300077,
+      "from_lon": -119.3057748,
+      "to_key": "India",
+      "to_lat": 21.0,
+      "to_lon": 78.0
+    },
+    {
+      "from_id": "Grace Bible Church (Visalia)",
+      "from_name": "Grace Bible Church, Visalia",
+      "from_lat": 36.3300077,
+      "from_lon": -119.3057748,
+      "to_key": "South Africa",
+      "to_lat": -28.8,
+      "to_lon": 24.8
+    },
+    {
+      "from_id": "Grace Bible Church (Visalia)",
+      "from_name": "Grace Bible Church, Visalia",
+      "from_lat": 36.3300077,
+      "from_lon": -119.3057748,
+      "to_key": "Croatia",
+      "to_lat": 45.1,
+      "to_lon": 15.2
+    },
+    {
+      "from_id": "Grace Bible Church (Visalia)",
+      "from_name": "Grace Bible Church, Visalia",
+      "from_lat": 36.3300077,
+      "from_lon": -119.3057748,
+      "to_key": "Chile",
+      "to_lat": -35.68,
+      "to_lon": -71.54
     },
     {
       "from_id": "Grace Bible Fellowship",
@@ -4923,15 +5786,6 @@
       "to_lon": -60.0
     },
     {
-      "from_id": "Grace Pointe Church",
-      "from_name": "Grace Pointe Church, Rio Vista",
-      "from_lat": 38.158468,
-      "from_lon": -121.6993956,
-      "to_key": "California, USA",
-      "to_lat": 37.25,
-      "to_lon": -119.75
-    },
-    {
       "from_id": "Lighthouse Bible Fellowship",
       "from_name": "Lighthouse Bible Fellowship, Fremont",
       "from_lat": 37.5686354,
@@ -4941,6 +5795,33 @@
       "to_lon": 78.0
     },
     {
+      "from_id": "Living Word Fellowship",
+      "from_name": "Living Word Fellowship, Porterville",
+      "from_lat": 36.0915989,
+      "from_lon": -119.0424777,
+      "to_key": "Mexico",
+      "to_lat": 23.63,
+      "to_lon": -102.55
+    },
+    {
+      "from_id": "Living Word Fellowship",
+      "from_name": "Living Word Fellowship, Porterville",
+      "from_lat": 36.0915989,
+      "from_lon": -119.0424777,
+      "to_key": "India",
+      "to_lat": 21.0,
+      "to_lon": 78.0
+    },
+    {
+      "from_id": "Living Word Fellowship",
+      "from_name": "Living Word Fellowship, Porterville",
+      "from_lat": 36.0915989,
+      "from_lon": -119.0424777,
+      "to_key": "Peru",
+      "to_lat": -9.19,
+      "to_lon": -75.02
+    },
+    {
       "from_id": "Lone Hill Church",
       "from_name": "Lone Hill Church, Los Gatos",
       "from_lat": 37.2459968,
@@ -4948,15 +5829,6 @@
       "to_key": "Jordan",
       "to_lat": 31.24,
       "to_lon": 36.51
-    },
-    {
-      "from_id": "Lone Hill Church",
-      "from_name": "Lone Hill Church, Los Gatos",
-      "from_lat": 37.2459968,
-      "from_lon": -121.9215315,
-      "to_key": "Alaska, USA",
-      "to_lat": 64.2,
-      "to_lon": -153.5
     },
     {
       "from_id": "Lone Hill Church",
@@ -4977,6 +5849,60 @@
       "to_lon": 115.0
     },
     {
+      "from_id": "Oakhurst Evangelical Free Church",
+      "from_name": "Oakhurst Evangelical Free Church",
+      "from_lat": 37.330142,
+      "from_lon": -119.627582,
+      "to_key": "Kenya",
+      "to_lat": 0.02,
+      "to_lon": 37.91
+    },
+    {
+      "from_id": "Oakhurst Evangelical Free Church",
+      "from_name": "Oakhurst Evangelical Free Church",
+      "from_lat": 37.330142,
+      "from_lon": -119.627582,
+      "to_key": "Uganda",
+      "to_lat": 1.37,
+      "to_lon": 32.29
+    },
+    {
+      "from_id": "Oakhurst Evangelical Free Church",
+      "from_name": "Oakhurst Evangelical Free Church",
+      "from_lat": 37.330142,
+      "from_lon": -119.627582,
+      "to_key": "Southeast Asia",
+      "to_lat": 4.5,
+      "to_lon": 110.0
+    },
+    {
+      "from_id": "Oakhurst Evangelical Free Church",
+      "from_name": "Oakhurst Evangelical Free Church",
+      "from_lat": 37.330142,
+      "from_lon": -119.627582,
+      "to_key": "Eurasia / CIS",
+      "to_lat": 50.0,
+      "to_lon": 70.0
+    },
+    {
+      "from_id": "Oakhurst Evangelical Free Church",
+      "from_name": "Oakhurst Evangelical Free Church",
+      "from_lat": 37.330142,
+      "from_lon": -119.627582,
+      "to_key": "California, USA",
+      "to_lat": 37.25,
+      "to_lon": -119.75
+    },
+    {
+      "from_id": "Oakhurst Evangelical Free Church",
+      "from_name": "Oakhurst Evangelical Free Church",
+      "from_lat": 37.330142,
+      "from_lon": -119.627582,
+      "to_key": "Western Asia",
+      "to_lat": 33.0,
+      "to_lon": 44.0
+    },
+    {
       "from_id": "Orchard Community Church",
       "from_name": "Orchard Community Church, Campbell",
       "from_lat": 37.2850555,
@@ -4984,15 +5910,6 @@
       "to_key": "Guatemala",
       "to_lat": 15.78,
       "to_lon": -90.23
-    },
-    {
-      "from_id": "Orchard Community Church",
-      "from_name": "Orchard Community Church, Campbell",
-      "from_lat": 37.2850555,
-      "from_lon": -121.9470876,
-      "to_key": "California, USA",
-      "to_lat": 37.25,
-      "to_lon": -119.75
     },
     {
       "from_id": "Orchard Community Church",
@@ -5155,6 +6072,78 @@
       "to_key": "Central Asia",
       "to_lat": 42.0,
       "to_lon": 65.0
+    },
+    {
+      "from_id": "Trinity Community Church",
+      "from_name": "Trinity Community Church, Clovis",
+      "from_lat": 36.91286,
+      "from_lon": -119.7266236,
+      "to_key": "France",
+      "to_lat": 46.23,
+      "to_lon": 2.21
+    },
+    {
+      "from_id": "Trinity Community Church",
+      "from_name": "Trinity Community Church, Clovis",
+      "from_lat": 36.91286,
+      "from_lon": -119.7266236,
+      "to_key": "North Africa",
+      "to_lat": 27.5,
+      "to_lon": 8.0
+    },
+    {
+      "from_id": "Trinity Community Church",
+      "from_name": "Trinity Community Church, Clovis",
+      "from_lat": 36.91286,
+      "from_lon": -119.7266236,
+      "to_key": "United Arab Emirates",
+      "to_lat": 23.4,
+      "to_lon": 54.0
+    },
+    {
+      "from_id": "Trinity Community Church",
+      "from_name": "Trinity Community Church, Clovis",
+      "from_lat": 36.91286,
+      "from_lon": -119.7266236,
+      "to_key": "Turkey",
+      "to_lat": 39.0,
+      "to_lon": 35.2
+    },
+    {
+      "from_id": "Trinity Community Church",
+      "from_name": "Trinity Community Church, Clovis",
+      "from_lat": 36.91286,
+      "from_lon": -119.7266236,
+      "to_key": "Haiti",
+      "to_lat": 19.0,
+      "to_lon": -72.3
+    },
+    {
+      "from_id": "Trinity Community Church",
+      "from_name": "Trinity Community Church, Clovis",
+      "from_lat": 36.91286,
+      "from_lon": -119.7266236,
+      "to_key": "Romania",
+      "to_lat": 45.9,
+      "to_lon": 25.0
+    },
+    {
+      "from_id": "Trinity Community Church",
+      "from_name": "Trinity Community Church, Clovis",
+      "from_lat": 36.91286,
+      "from_lon": -119.7266236,
+      "to_key": "Ukraine",
+      "to_lat": 49.0,
+      "to_lon": 31.5
+    },
+    {
+      "from_id": "Trinity Community Church",
+      "from_name": "Trinity Community Church, Clovis",
+      "from_lat": 36.91286,
+      "from_lon": -119.7266236,
+      "to_key": "Middle East",
+      "to_lat": 26.5,
+      "to_lon": 45.0
     }
   ],
   "shared_support": [
@@ -5214,7 +6203,8 @@
       "field": "Israel and San Francisco",
       "churches": [
         "Grace Church of Napa Valley",
-        "Grace Bible Fellowship, Brentwood"
+        "Grace Bible Fellowship, Brentwood",
+        "Oakhurst Evangelical Free Church"
       ]
     },
     {
